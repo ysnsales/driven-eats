@@ -56,7 +56,7 @@ body {
     margin-top: 31px;
   }
   
-  .pratos {
+  .pratos, .bebidas, .sobremesas {
     display: flex;
     overflow: scroll;
   }
@@ -66,9 +66,9 @@ body {
     background: transparent; /* make scrollbar transparent */
   }
   
-  .pratos div {
+  .pratos div, .bebidas div, .sobremesas div {
     width: 172px;
-    height: 216px;
+    height: 210px;
     margin-left: 16px;
     margin-top: 17px;
     align-items: center;
@@ -76,9 +76,14 @@ body {
     background-color: #ffffff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+
+    border-style: solid;
+    border-color:#ffffff;
+    border-width: 3px;
+    box-shadow: inset;
   }
   
-  .pratos img {
+  .pratos img, .bebidas img, .sobremesas img {
     width: 144px;
     height: 87px;
     margin-top: 18px;
@@ -87,7 +92,7 @@ body {
     border-radius: 4px;
   }
   
-  .pratos h2 {
+  .pratos h2, .bebidas h2, .sobremesas h2 {
     width: 139px;
     height: 23px;
     margin-left: 15px;
@@ -102,7 +107,7 @@ body {
     color: #333333;
   }
   
-  .pratos p {
+  .pratos p, .bebidas p, .sobremesas p {
     width: 147px;
     height: 39px;
     margin-left: 14px;
@@ -117,7 +122,7 @@ body {
     color: #a6a6a6;
   }
   
-  .pratos h3 {
+  .pratos h3, .bebidas h3, .sobremesas h3 {
     width: 66px;
     height: 19px;
     margin-left: 14px;
@@ -130,6 +135,11 @@ body {
     line-height: 19px;
   
     color: #000000;
+  }
+
+  ion-icon {
+    display: none;
+
   }
   
   .barra-inferior {
@@ -168,4 +178,24 @@ body {
     margin-top: 8px;
     color: #ffffff;
   }
+
+ .pratos div.selecionado, .bebidas div.selecionado, .sobremesas div.selecionado {
+    border-style: solid;
+    border-color: #28A745;
+    border-width: 3px;
+    box-shadow: inset;
+}
   
+.pratos div.selecionado ion-icon, .bebidas div.selecionado ion-icon, .sobremesas div.selecionado ion-icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 143px;
+    bottom: 18px;
+    color: #28A745;
+}
+
+.habilitado {
+    background-color: #28A745 ;
+}
