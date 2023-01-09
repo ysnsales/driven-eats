@@ -3,7 +3,7 @@ let PratoPreco;
 let PratoPrecoNum;
 function selecionarPrato (pratoClicado) {
 
-    const pratoSelecionado = document.querySelector('.selecionado');
+    const pratoSelecionado = document.querySelector('.pratos .selecionado');
     
     if (pratoSelecionado !== null){
         // remover a classe selecionado
@@ -115,23 +115,29 @@ precoFinal=precoTotal
 let mensagem;
 function mensagemwpp(){
 
-    const nome = prompt('Informe seu nome');
-    const endereco = prompt('Endereço para entrega');
+    let nome = prompt('Informe seu nome');
+    let endereco = prompt('Endereço para entrega');
+
+    if (nome === null) {
+        nome = 'Não informado'};
+    if (endereco === null) {
+        endereco = 'Não informado'};
 
     mensagem = `Olá, gostaria de fazer o pedido: 
-    - Prato: ${PratoOpcao.innerHTML} 
-    - Bebida: ${BebidaOpcao.innerHTML} 
-    - Sobremesa: ${SobremesaOpcao.innerHTML}  
-    Total: ${precoFinal.innerHTML}
-    
-    ${nome}
-    ${endereco}`;
+- Prato: ${PratoOpcao.innerHTML} 
+- Bebida: ${BebidaOpcao.innerHTML} 
+- Sobremesa: ${SobremesaOpcao.innerHTML}  
+Total: ${precoFinal.innerHTML}
+
+Nome: ${nome}
+Endereço: ${endereco}`;
+
 
     const wpp = 'https://wa.me/5533984188518?text=' + encodeURIComponent(mensagem);
     window.open(wpp);
 }
 
 function voltar(){
-    document.querySelector('.detalhespedido .mostrar').classList.remove('mostrar');
-    document.querySelector('.fundo .mostrar').classList.remove('mostrar');
+        document.querySelector('.detalhespedido').classList.remove('mostrar');
+        document.querySelector('.fundo').classList.remove('mostrar');
 }
