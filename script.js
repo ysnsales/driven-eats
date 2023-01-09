@@ -66,6 +66,8 @@ function habilitarbotao() {
     if (PratoOpcao !== undefined && BebidaOpcao !==undefined && SobremesaOpcao !==undefined){
         document.querySelector('.barra-inferior .botao').classList.add('habilitado');
         document.querySelector('.barra-inferior .botao p').innerHTML = "Fechar pedido"; 
+        const botaohab = document.querySelector('.barra-inferior .botao');
+        botaohab.removeAttribute('disabled');
     }
 
 }
@@ -76,7 +78,8 @@ function continuar (){
 
     if (PratoOpcao !== undefined && BebidaOpcao !==undefined && SobremesaOpcao !==undefined){
     document.querySelector('.barra-inferior .botao').classList.add('habilitado');
-    
+
+
     
     //colocar o fundo transparente sobre o site
     //exibir detalhes do pedido

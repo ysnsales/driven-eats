@@ -104,7 +104,7 @@
 </div>
 
 <div class="barra-inferior">
-    <button data-test="order-btn" onclick="continuar()" class="botao">
+    <button data-test="order-btn" onclick="continuar()" class="botao" disabled>
      <p> Selecione os 3 itens
         para fechar o pedido</p> 
     </button>
@@ -126,7 +126,7 @@
         <div class="total"><p>TOTAL</p>
             <p class="preco">preço</p></div>
         <button data-test="confirm-order-btn" onclick="mensagemwpp()"> Tudo certo, pode pedir!</button>
-        <h1 data-test="confirm-order-btn" onclick="voltar()">Cancelar</h1>
+        <button data-test="cancel-order-btn" class="cancelar" onclick="voltar()">Cancelar</button>
 </div>
 
 

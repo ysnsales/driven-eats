@@ -225,9 +225,9 @@ body {
     height: 353px;
     position: fixed;
     top: calc(50% - 353px/2 - 0.5px);
+    right: 19px;
     border-radius: 9px;
     background-color: #50D074 ;
-
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -300,4 +300,9 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.detalhespedido .cancelar {
+    background-color: #50D074;
+    color: #FFFFFF
 }
