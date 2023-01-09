@@ -224,8 +224,7 @@ body {
     width: 377px;
     height: 353px;
     position: fixed;
-    top: 30%;
-    left: 19px;
+    top: calc(50% - 353px/2 - 0.5px);
     border-radius: 9px;
     background-color: #50D074 ;
 
