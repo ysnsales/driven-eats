@@ -70,9 +70,9 @@ function habilitarbotao() {
 
 }
 
+let precoFinal;
 function continuar (){
     //mudar a cor do botão
-    
 
     if (PratoOpcao !== undefined && BebidaOpcao !==undefined && SobremesaOpcao !==undefined){
     document.querySelector('.barra-inferior .botao').classList.add('habilitado');
@@ -108,4 +108,18 @@ function continuar (){
     const precoTotal = document.querySelector('.detalhespedido .total .preco');
 
     precoTotal.innerHTML =`R$ ${(((Number(PratoPrecoNum.replace(',','.'))) + (Number(BebidaPrecoNum.replace(',','.'))) + (Number(SobremesaPrecoNum.replace(',','.')))).toFixed(2)).replace('.',',')}`;
+precoFinal=precoTotal
 }}
+
+let mensagem;
+function mensagemwpp(){
+
+    mensagem = `Olá, gostaria de fazer o pedido: 
+    - Prato: ${PratoOpcao.innerHTML} 
+    - Bebida: ${BebidaOpcao.innerHTML} 
+    - Sobremesa: ${SobremesaOpcao.innerHTML}  
+    Total: R$ ${precoFinal.innerHTML} `;
+
+    const wpp = 'https://wa.me/5533984188518?text=' + encodeURIComponent(mensagem);
+    window.open(wpp);
+}

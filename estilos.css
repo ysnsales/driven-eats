@@ -79,7 +79,7 @@ body {
 
     border-style: solid;
     border-color:#ffffff;
-    border-width: 3px;
+    border-width: 4px;
     box-shadow: inset;
   }
   
@@ -181,8 +181,8 @@ body {
 
  .pratos div.selecionado, .bebidas div.selecionado, .sobremesas div.selecionado {
     border-style: solid;
-    border-color: #28A745;
-    border-width: 3px;
+    border-color: #32B72F;
+    border-width: 4px;
     box-shadow: inset;
 }
   
@@ -193,11 +193,11 @@ body {
     position: relative;
     left: 143px;
     bottom: 18px;
-    color: #28A745;
+    color: #32B72F;
 }
 
 .habilitado {
-    background-color: #28A745 ;
+    background-color: #32B72F;
 }
 
 .fundo {
@@ -281,4 +281,9 @@ display: none;
 
 .mostrar {
     display: initial;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
