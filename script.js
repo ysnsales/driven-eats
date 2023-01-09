@@ -109,17 +109,29 @@ function continuar (){
 
     precoTotal.innerHTML =`R$ ${(((Number(PratoPrecoNum.replace(',','.'))) + (Number(BebidaPrecoNum.replace(',','.'))) + (Number(SobremesaPrecoNum.replace(',','.')))).toFixed(2)).replace('.',',')}`;
 precoFinal=precoTotal
-}}
+}
+}
 
 let mensagem;
 function mensagemwpp(){
+
+    const nome = prompt('Informe seu nome');
+    const endereco = prompt('Endereço para entrega');
 
     mensagem = `Olá, gostaria de fazer o pedido: 
     - Prato: ${PratoOpcao.innerHTML} 
     - Bebida: ${BebidaOpcao.innerHTML} 
     - Sobremesa: ${SobremesaOpcao.innerHTML}  
-    Total: R$ ${precoFinal.innerHTML} `;
+    Total: ${precoFinal.innerHTML}
+    
+    ${nome}
+    ${endereco}`;
 
     const wpp = 'https://wa.me/5533984188518?text=' + encodeURIComponent(mensagem);
     window.open(wpp);
+}
+
+function voltar(){
+    document.querySelector('.detalhespedido .mostrar').classList.remove('mostrar');
+    document.querySelector('.fundo .mostrar').classList.remove('mostrar');
 }

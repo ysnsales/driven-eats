@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>DrivenEats</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
 
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="estilos.css" />
@@ -31,23 +32,23 @@
             <img src="imagens/frango_yin_yang.png" />
             <h2> Frango Yin Yang</h2>
             <p> Um pouco de batata, um pouco de salada</p>
-            <h3> R$ 14,00 </h3>
+            <h3> R$ 14,90 </h3>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
         <div onclick="selecionarPrato(this)">
-            <img src="imagens/frango_yin_yang.png" />
-            <h2> Frango Yin Yang</h2>
-            <p> Um pouco de batata, um pouco de salada</p>
-            <h3> R$ 14,00</h3>
+            <img src="imagens/prato-vegetariano.jpg" />
+            <h2> Vegetariano</h2>
+            <p> Prato vegetariano equilibrado</p>
+            <h3> R$ 12,50</h3>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
         <div onclick="selecionarPrato(this)">
-            <img src="imagens/frango_yin_yang.png" />
-            <h2> Frango Yin Yang</h2>
-            <p> Um pouco de batata, um pouco de salada</p>
-            <h3> R$ 14,00</h3>
+            <img src="imagens/caldo_frango.jpg" />
+            <h2> Caldo frango</h2>
+            <p> Caldinho de frango com batata</p>
+            <h3> R$ 11,90</h3>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
     </div>
@@ -62,18 +63,18 @@
         </div>
 
         <div onclick="selecionarBebida(this)">
-            <img src="imagens/coca-cola.png" />
-            <h2> Coquinha gelada</h2>
+            <img src="imagens/Guaraná_Antarctica.jpg" />
+            <h2> Guaraná gelado</h2>
             <p> Lata 350 ml</p>
-            <h3> R$ 4,90</h3>
+            <h3> R$ 4,50</h3>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
         <div onclick="selecionarBebida(this)">
-            <img src="imagens/coca-cola.png" />
-            <h2> Coquinha gelada</h2>
-            <p> Lata 350 ml</p>
-            <h3> R$ 4,90</h3>
+            <img src="imagens/Suco-de-laranja.png" />
+            <h2> Suco de laranja</h2>
+            <p> Copo 500 ml</p>
+            <h3> R$ 6,90</h3>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
     </div>
@@ -82,22 +83,22 @@
         <div onclick="selecionarSobremesa(this)">
             <img src="imagens/pudim.png" />
             <h2>Pudim</h2>
-            <p> Apenas pudim</p>
-            <h3> R$ 7,90 </h3>  
+            <p> Pedaço de pudim</p>
+            <h3> R$ 3,90 </h3>  
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div onclick="selecionarSobremesa(this)">
-            <img src="imagens/pudim.png" />
-            <h2>Pudim</h2>
-            <p> Apenas pudim</p>
-            <h3> R$ 7,90</h3>
+            <img src="imagens/Bolo-de-chocolate.jpg" />
+            <h2>Bolo</h2>
+            <p> Fatia de bolo de chocolate</p>
+            <h3> R$ 4,50</h3>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div onclick="selecionarSobremesa(this)">
-            <img src="imagens/pudim.png" />
-            <h2>Pudim</h2>
-            <p> Apenas pudim</p>
-            <h3> R$ 7,90</h3>
+            <img src="imagens/cookie.jpg" />
+            <h2>Cookies</h2>
+            <p> 3 cookies de chocolate</p>
+            <h3> R$ 3,00</h3>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 </div>
@@ -110,18 +111,22 @@
 </div>
 
 <div class="fundo"></div>
+
     <div class="detalhespedido">
     <h1>Confirme seu pedido</h1>
         <div class="pratoEscolhido"><p>prato</p>
-             <p class="preco">preço</p></div>
+             <p class="preco">preço</p>
+            </div>
          <div class="bebidaEscolhida"><p>bebida</p>
-            <p class="preco">preço</p></div>
+            <p class="preco">preço</p>
+        </div>
         <div class="sobremesaEscolhida"><p>sobremesa</p>
-          <p class="preco">preço</p></div>
+          <p class="preco">preço</p>
+        </div>
         <div class="total"><p>TOTAL</p>
             <p class="preco">preço</p></div>
         <button onclick="mensagemwpp()"> Tudo certo, pode pedir!</button>
-        <h1>Cancelar</h1>
+        <h1 onclick="voltar()">Cancelar</h1>
 </div>
 
 
