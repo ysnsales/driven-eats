@@ -118,9 +118,9 @@ function mensagemwpp(){
     let nome = prompt('Informe seu nome');
     let endereco = prompt('Endereço para entrega');
 
-    if (nome === null) {
+    if (nome === null || nome === '') {
         nome = 'Não informado'};
-    if (endereco === null) {
+    if (endereco === null || endereco === '') {
         endereco = 'Não informado'};
 
     mensagem = `Olá, gostaria de fazer o pedido: 
